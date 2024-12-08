@@ -1,19 +1,13 @@
-# fly.toml app configuration file generated for crypto-voting-project-restless-water-6488 on 2024-12-08T15:05:38+01:00
+# fly.toml app configuration file generated for french-crypto-trading on 2024-12-08T15:28:26+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'crypto-voting-project-restless-water-6488'
+app = 'french-crypto-trading'
 primary_region = 'cdg'
 console_command = '/rails/bin/rails console'
 
 [build]
-
-[deploy]
-  release_command = './bin/rails db:prepare'
-
-[env]
-  HTTP_PORT = '8080'
 
 [http_service]
   internal_port = 8080
